@@ -16,6 +16,11 @@ h1 { margin: 0 0 8px; font-size: 36px; letter-spacing: -0.02em; }
 main p { margin: 0 0 24px; color: var(--muted); font-size: 18px; }
 a { color: var(--amber); text-decoration: none; }
 a:hover { text-decoration: underline; }
+.services { margin-top: 32px; padding-top: 32px; border-top: 1px solid #24344F; max-width: 520px; width: 100%; }
+.services h2 { margin: 0 0 6px; font-size: 14px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--amber); }
+.services p { margin: 0 0 16px; font-size: 16px; color: var(--light); }
+.services ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; }
+.services li { font-size: 14px; color: var(--muted); border: 1px solid #24344F; border-radius: 999px; padding: 4px 12px; }
 footer { text-align: center; padding: 24px 16px; color: var(--muted); font-size: 14px; }
 footer a { color: var(--muted); }
 
