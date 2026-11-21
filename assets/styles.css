@@ -57,7 +57,7 @@ section { padding: 88px 0; }
 .card h3 { margin: 0 0 8px; font-size: 19px; letter-spacing: -0.01em; }
 .card p { margin: 0; color: var(--ink-muted); font-size: 15px; }
 .tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: #FFF4DE; color: #8A5A00; margin-bottom: 14px; }
-.card .domain { display: block; margin-top: 14px; font-size: 14px; color: var(--ink); font-weight: 600; text-decoration: none; }
+.card .domain { display: block; margin-top: 14px; font-size: 14px; color: var(--ink-muted); font-weight: 600; }
 
 .principles { background: #F6F8FB; }
 .principle { padding: 4px 0; }
