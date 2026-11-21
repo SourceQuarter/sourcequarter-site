@@ -1,0 +1,92 @@
+:root {
+  --navy: #0E1726;
+  --navy-2: #16233A;
+  --line: #24344F;
+  --light: #E8EEF6;
+  --muted: #9AA8BC;
+  --amber: #F5A524;
+  --paper: #FFFFFF;
+  --ink: #0E1726;
+  --ink-muted: #4A5872;
+  --paper-line: #E3E8F0;
+  --radius: 16px;
+  --max: 1080px;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+}
+a { color: inherit; }
+img { display: block; max-width: 100%; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+
+/* Header */
+.site-header { background: var(--navy); color: var(--light); }
+.nav { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; gap: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; font-weight: 700; font-size: 18px; letter-spacing: -0.01em; }
+.brand img { width: 36px; height: 36px; border-radius: 9px; }
+.nav-links { display: flex; gap: 24px; font-size: 15px; }
+.nav-links a { text-decoration: none; color: var(--muted); }
+.nav-links a:hover { color: var(--light); }
+
+/* Hero */
+.hero { background: var(--navy); color: var(--light); padding: 72px 0 96px; }
+.eyebrow { color: var(--amber); font-weight: 600; font-size: 14px; letter-spacing: 0.08em; text-transform: uppercase; margin: 0 0 16px; }
+.hero h1 { font-size: clamp(36px, 6vw, 60px); line-height: 1.08; letter-spacing: -0.03em; margin: 0 0 24px; max-width: 16ch; }
+.hero p.lead { font-size: clamp(17px, 2.2vw, 20px); color: var(--muted); max-width: 56ch; margin: 0 0 32px; }
+.btn { display: inline-block; padding: 12px 20px; border-radius: 999px; font-weight: 600; text-decoration: none; font-size: 15px; }
+.btn-primary { background: var(--amber); color: var(--navy); }
+.btn-primary:hover { filter: brightness(1.05); }
+.btn-ghost { color: var(--light); border: 1px solid var(--line); margin-left: 8px; }
+
+/* Sections */
+section { padding: 88px 0; }
+.section-head { max-width: 640px; margin-bottom: 40px; }
+.section-head h2 { font-size: clamp(28px, 4vw, 40px); letter-spacing: -0.02em; line-height: 1.15; margin: 0 0 12px; }
+.section-head p { color: var(--ink-muted); margin: 0; font-size: 17px; }
+
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.card { border: 1px solid var(--paper-line); border-radius: var(--radius); padding: 24px; background: var(--paper); }
+.card h3 { margin: 0 0 8px; font-size: 19px; letter-spacing: -0.01em; }
+.card p { margin: 0; color: var(--ink-muted); font-size: 15px; }
+.tag { display: inline-block; font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: #FFF4DE; color: #8A5A00; margin-bottom: 14px; }
+.card .domain { display: block; margin-top: 14px; font-size: 14px; color: var(--ink); font-weight: 600; text-decoration: none; }
+
+.principles { background: #F6F8FB; }
+.principle { padding: 4px 0; }
+.principle .num { color: var(--amber); font-weight: 700; font-size: 14px; }
+.principle h3 { margin: 6px 0 6px; font-size: 18px; }
+.principle p { margin: 0; color: var(--ink-muted); font-size: 15px; }
+
+.contact { background: var(--navy); color: var(--light); }
+.contact .section-head p { color: var(--muted); }
+.contact a.mail { color: var(--amber); font-weight: 600; font-size: 20px; text-decoration: none; }
+
+/* Footer */
+.site-footer { background: var(--navy); color: var(--muted); border-top: 1px solid var(--line); padding: 28px 0; font-size: 14px; }
+.footer-row { display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; }
+.footer-row nav { display: flex; gap: 20px; }
+.footer-row a { color: var(--muted); text-decoration: none; }
+.footer-row a:hover { color: var(--light); }
+
+/* Legal pages */
+.legal { padding: 56px 0 88px; }
+.legal .wrap { max-width: 760px; }
+.legal h1 { font-size: 36px; letter-spacing: -0.02em; margin: 0 0 8px; }
+.legal .updated { color: var(--ink-muted); margin: 0 0 32px; font-size: 14px; }
+.legal h2 { font-size: 20px; margin: 32px 0 8px; }
+.legal p, .legal li { color: #2B3850; }
+
+@media (max-width: 640px) {
+  .nav-links { display: none; }
+  .hero { padding: 48px 0 64px; }
+  section { padding: 64px 0; }
+  .btn-ghost { margin: 12px 0 0; }
+}
